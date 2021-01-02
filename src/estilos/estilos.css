@@ -1,0 +1,42 @@
+
+/* estilos de menu */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.menu-contenedor{
+    display: flex;
+    list-style: none;
+    font-size: 1.5em;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: hsl(210, 9%, 55%);
+    width: 100%;
+    
+}
+li{ 
+    flex: 1;
+     
+}
+
+
+a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-weight: 500;
+    font-style: italic;
+    padding: .5em 1em;
+    display: block;
+    
+}
+
+li :hover {
+    background:hsl(204, 64%, 34% );
+    }
