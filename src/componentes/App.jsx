@@ -6,8 +6,9 @@ import TarjetaPresentacion from './moleculas/TarjetaPresentacion'
 
 const App=()=>(
   <>
-  <Menu/>
+  
   <Banner/>
+ 
   <TarjetaPresentacion/>
   </>
 )
