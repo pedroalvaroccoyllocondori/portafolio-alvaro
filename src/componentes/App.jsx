@@ -1,15 +1,12 @@
 import React from 'react'
-import Menu from './moleculas/Menu'
-import "../estilos/estilos.css"
-import Banner from './moleculas/Banner'
-import TarjetaPresentacion from './moleculas/TarjetaPresentacion'
+import BannerMenu from './moleculas/BannerMenu'
+import Contacto from './moleculas/Contacto'
+
 
 const App=()=>(
   <>
-  
-  <Banner/>
- 
-  <TarjetaPresentacion/>
+  <BannerMenu/>
+  <Contacto/>
   </>
 )
 
