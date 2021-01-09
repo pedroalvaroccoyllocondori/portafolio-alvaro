@@ -1,16 +1,17 @@
 import React from "react"
-import "../../estilos/estilosPresentacion.css"
 
 
 
-const Presentacion=()=>(
+const Estudios=()=>(
     <>
     <div className="contenedor">
-        <div className="titulo">about</div>
+        <div className="titulo">estudios</div>
         <div className="contenedor-descripccion">
             <div className="item">
-            <h1>hello</h1>
-            <p>my name is pedro alvaro im a developer sofware a love programing </p>
+            <h1>Universidad nacional san luis gonzaga</h1>
+            <p>ing de sistemas </p>
+            <h1>Edteam</h1>
+            <p>React desde Cero</p>
             </div>
            
         </div>
@@ -18,4 +19,4 @@ const Presentacion=()=>(
     </>
 )
 
-export default Presentacion
+export default Estudios

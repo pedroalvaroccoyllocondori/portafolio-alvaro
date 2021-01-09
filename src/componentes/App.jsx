@@ -1,14 +1,13 @@
 import React from 'react'
 import BannerMenu from './moleculas/BannerMenu'
+import Estudios from './moleculas/Estudios'
 // import Contacto from './moleculas/Contacto'
-import Presentacion from "./moleculas/Presentacion"
-
 
 
 const App=()=>(
   <>
   <BannerMenu/>
-  <Presentacion/>
+  <Estudios/>
   
   </>
 )
