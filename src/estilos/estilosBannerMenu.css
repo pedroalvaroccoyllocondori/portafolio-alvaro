@@ -13,6 +13,7 @@
     justify-content:center;/*alineacion de los elementos 'space betwen'*/
     background: rgba(0, 0, 0, 0.6); 
     align-items: flex-end;/*el elemento se alinea en el eje y*/
+    
 }
 /* estilos de menu */
 .contenedor-menu .contenedor-derecha{
