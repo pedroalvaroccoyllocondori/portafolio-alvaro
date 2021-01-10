@@ -9,8 +9,9 @@ const Presentacion=()=>(
         <div className="titulo">about</div>
         <div className="contenedor-descripccion">
             <div className="item">
-            <h1>hello</h1>
-            <p>my name is pedro alvaro im a developer sofware a love programing </p>
+            <p className="item-titulo">hello</p>
+            <div className="item-imagen"></div>
+            <p className="item-descripcion">my name is pedro alvaro im a developer sofware a love programing </p>
             </div>
            
         </div>

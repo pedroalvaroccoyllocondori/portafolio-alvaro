@@ -17,7 +17,8 @@
     
     margin-bottom: 1em;
     margin-top: 1em;
-    box-shadow: 0px 0px 8px 1px  hsl(120, 3%, 21%);
+    box-shadow: 0px 0px 8px 1px rgb(192, 197, 207);
+    ;
     border-radius: .5em;
     font-family: 'Roboto' ;
     
@@ -34,7 +35,7 @@
     display: flex;
     height: 7em;
     width: 25em;
-    box-shadow: 0px 0px 8px 1px hsl(120, 3%, 21%);
+    box-shadow: 0px 0px 8px 1px rgb(192, 197, 207);
     padding: .6em;
     align-items: center;
     justify-content: space-around;
