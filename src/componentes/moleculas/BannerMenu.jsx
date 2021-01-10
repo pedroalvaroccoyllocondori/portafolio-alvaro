@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import "../../estilos/estilosBannerMenu.css"
 
 const BannerMenu =()=>(
@@ -8,10 +9,10 @@ const BannerMenu =()=>(
       <div className="contenedor-menu">
         <div className="item-menu contenedor-izquierda"></div>
         <div className="contenedor-derecha">
-            <div className="item-menu"><a className="item-link" href="#">About</a></div>
-            <div className="item-menu"><a className="item-link" href="#">proyectos</a></div>
-            <div className="item-menu"><a className="item-link" href="#">contacto</a></div>
-            <div className="item-menu"><a className="item-link" href="#">estudios</a></div>
+            <div className="item-menu"><NavLink exact activeClassName="estadoActivo" className="item-link" to="/">About</NavLink></div>
+            <div className="item-menu"><NavLink activeClassName="estadoActivo"  className="item-link" to="/proyectos">proyectos</NavLink></div>
+            <div className="item-menu"><NavLink activeClassName="estadoActivo"  className="item-link" to="/contacto">contacto</NavLink></div>
+            <div className="item-menu"><NavLink activeClassName="estadoActivo"  className="item-link" to="/estudios">estudios</NavLink></div>
         </div>
      
     </div>
