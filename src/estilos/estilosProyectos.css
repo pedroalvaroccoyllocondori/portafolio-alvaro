@@ -58,10 +58,11 @@
 .imagenproyecto{
     height: 10em;
     width: 10em;
-    background-color: red;
+    background: rgba(145, 145, 137, 0.5);
     border-radius: .5em;
     grid-area: imagen;
     margin-right: 2em;
+    
 }
 .itemTiTulo{
     grid-area:titulo ;
