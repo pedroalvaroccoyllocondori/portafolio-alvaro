@@ -9,7 +9,7 @@ const BannerMenu =()=>(
       <div className="contenedor-menu">
         <div className="item-menu contenedor-izquierda"></div>
         <div className="contenedor-derecha">
-            <div className="item-menu"><NavLink exact activeClassName="estadoActivo" className="item-link" to="/">About</NavLink></div>
+            <div className="item-menu"><NavLink exact activeClassName="estadoActivo" className="item-link" to="/">Acerca</NavLink></div>
             <div className="item-menu"><NavLink activeClassName="estadoActivo"  className="item-link" to="/proyectos">proyectos</NavLink></div>
             <div className="item-menu"><NavLink activeClassName="estadoActivo"  className="item-link" to="/contacto">contacto</NavLink></div>
             <div className="item-menu"><NavLink activeClassName="estadoActivo"  className="item-link" to="/estudios">estudios</NavLink></div>
