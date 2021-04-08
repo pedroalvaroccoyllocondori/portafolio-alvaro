@@ -40,12 +40,13 @@
     font-family: 'Roboto' ; 
     width: 100%;
     height: 100%;
+    background-color: rgba(210, 214, 214, 0.644);
 }
 .itemproyectos{
     display: grid;
     grid-template-areas: 'titulo titulo'
                 'imagen contenido';
-    grid-template-columns: fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 2em 1fr;
    
     width: 100%;

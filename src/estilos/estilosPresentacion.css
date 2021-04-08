@@ -32,6 +32,7 @@
     display: grid;
     grid-template-columns: 1fr ;
     grid-gap: 1.5em;
+    background-color: rgba(224, 222, 223, 0.61);
     
 }
 .item{
@@ -62,5 +63,5 @@
 .item-descripcion{
    
     grid-area: columm;
-    margin: auto;
+    
 }
