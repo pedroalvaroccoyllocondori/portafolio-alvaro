@@ -12,6 +12,7 @@
     padding-bottom: 1.5em;
     justify-content:center;/*alineacion de los elementos 'space betwen'*/
     background: rgba(0, 0, 0, 0.6); 
+    // background:red;
     align-items: flex-end;/*el elemento se alinea en el eje y*/
     
 }
@@ -35,6 +36,7 @@
 
 .contenedor-menu .contenedor-derecha .item-menu .item-link:hover{
     background: rgb(160, 158, 157);
+    // background: red;
 }
 
 a{

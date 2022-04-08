@@ -16,7 +16,7 @@ const Estudios=()=>(
             <div className="itemproyectos">
             <h1 className="itemTiTulo">EDteam</h1>
             <p className="itemdescripProyectos">React desde cero, git,css,javascript</p>
-            <img className="imagenproyecto exepcion" alt="imagen2" src="https://ed.team/static/images/logo/logo-alt.svg" alt="imagen"></img>
+            <img className="imagenproyecto exepcion" alt="imagen2" src="https://ed.team/static/images/logo/logo-alt.svg" ></img>
             </div>
            
         </div>

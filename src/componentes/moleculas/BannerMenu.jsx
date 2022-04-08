@@ -1,6 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-import "../../estilos/estilosBannerMenu.css"
+import "../../estilos/estilosBannerMenu.scss"
 
 const BannerMenu =()=>(
     <>
