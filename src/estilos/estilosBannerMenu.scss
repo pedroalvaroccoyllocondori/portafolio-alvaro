@@ -5,83 +5,60 @@
     box-sizing: border-box;
     margin: 0;
 }
-.contenedor-menu{
-    
-    display: flex;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    justify-content:center;/*alineacion de los elementos 'space betwen'*/
-    background: rgba(0, 0, 0, 0.6); 
-    // background:red;
-    align-items: flex-end;/*el elemento se alinea en el eje y*/
-    
-}
-/* estilos de menu */
-.contenedor-menu .contenedor-derecha{
-    display: flex;
-    margin-right: 2em;
-}
-.contenedor-menu .contenedor-izquierda{
-    
-    margin-left: 2em;
-}
-.contenedor-menu .contenedor-derecha .item-menu .item-link{
- 
-    padding: .5em;
-    margin: 1em;
-    border-radius: 2em;
-    color: white;
-    
-}
 
-.contenedor-menu .contenedor-derecha .item-menu .item-link:hover{
-    background: rgb(160, 158, 157);
-    // background: red;
-}
-
-a{
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-
-}
-
-
-
-/* estilos de banner */
 .contenedor-banner{
-    display: grid;
-    background-image: url(https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1464&q=80);
-    height: 25em;
+    min-height: 60vh;
+    background-image: url(../../src/assets/fondo1.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    align-items: flex-end;
-
+    background-repeat:no-repeat;
+    background-position: bottom;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position: relative;
     
-     
-}
-.contenedor-banner .titulo-banner{
-    margin-left: auto;
-    margin-right: auto;
-    color:  white;
-    font-family: 'Roboto' ;
-    font-size: 2em;
-}
+    .TITULO{
+        display:inline-block;
+        background: rgba(242, 242, 242, 0.64);
+        // filter: blur(1px);
+        height:30vh;
+        width: 65vw;
+        z-index: 1;
+
+        .CONTENEDOR_TITULO{
+            z-index: 10;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height:100%;
+            border: 1px solid red;
+        }
+
+    }
+    .menu{
+        background: rgba(75, 75, 75, 0.53);
+        position:absolute;
+        bottom: 0;
+        width: 100vw;
+        height:3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .item-link{
+            color: white;
+            border: 1px solid red;
+            padding-left: 1em;
+            padding-right: 1em;
+            height: 3.5rem;
+        }
+
+    }
+    
 
 
-.item{
-    display: grid;
-    height: 7em;
-    width: 25em;
-    box-shadow: 0px 0px 8px 1px hsl(120, 3%, 21%);
-    padding: .6em;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: .5em;
-    font-family: 'Roboto' ;
-   
 }
-
 
 
 
