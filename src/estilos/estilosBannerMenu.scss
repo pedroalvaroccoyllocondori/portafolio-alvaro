@@ -4,9 +4,27 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+   
 }
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local('Inter') ,local('Inter Regular'), url('../../src/assets/fuentes/Inter-VariableFont_slnt,wght.ttf');
+  }
+  @font-face {
+    font-family: 'BarlowCondensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('BarlowCondensed') ,local('BarlowCondensed Regular'), url('../../src/assets/fuentes/BarlowCondensed-Regular.ttf');
+  }
+  
 
 .contenedor-banner{
+
     min-height: 60vh;
     background-image: url(../../src/assets/fondo1.png);
     background-size: cover;
@@ -17,48 +35,151 @@
     align-items:center;
     flex-direction:column;
     position: relative;
-    
+
+
+    .fijo{
+        width: 5em;
+        height: 5em;
+        background: rgba(67, 67, 67, 1);
+        color: white;
+        align-self:start;
+        margin-bottom: .5em;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        &:hover{
+            background: rgba(206, 206, 206, 1);
+            color: black;
+        }
+        }
+
     .TITULO{
         display:inline-block;
-        background: rgba(242, 242, 242, 0.64);
-        // filter: blur(1px);
-        height:30vh;
-        width: 65vw;
-        z-index: 1;
+        height:40vh;
+        width: 55vw;
+        position:absolute;
+        top: 10%;
+        font-family: 'BarlowCondensed';
+        font-size:4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .LETRA-TITULO1{
+            position:relative;
+            left:0;
+        }
+        .LETRA-TITULO2{
+            position:relative;
+            left:20%;
+        }
+        .LETRA-TITULO3{
+            position:relative;
+            left:40%;
+            font-size:1.5rem;
+        }
+        &::before{
+            content:"";
+            height:100%;
+            width: 100%;
+            background: rgba(242, 242, 242, 0.64);
+            filter: blur(1px);
+            backdrop-filter: blur(4px);
+            display:block;
+            position: absolute;
+
+        }
+        
 
         .CONTENEDOR_TITULO{
-            z-index: 10;
+            position:absolute;
             display:flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            min-height:100%;
-            border: 1px solid red;
+            align-items: flex-start;
+            min-height:30vh;
         }
 
     }
     .menu{
         background: rgba(75, 75, 75, 0.53);
+        backdrop-filter: blur(4px);
         position:absolute;
         bottom: 0;
         width: 100vw;
         height:3.5rem;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        .item-link{
-            color: white;
-            border: 1px solid red;
-            padding-left: 1em;
-            padding-right: 1em;
-            height: 3.5rem;
+        .item-menu{
+                height:100%;
+                width: 10em;
+                .item-link{
+                    color:white;
+                    font-family: 'Inter';
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    background: #838383;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                 
+                    &:hover {
+                        background: #CECECE;
+                        color: rgb(28, 28, 28);
+                      }
+                }
+                &:nth-of-type(1){
+                    &::after{
+                        content:'';
+                        width: .15em;
+                        height: 100%;
+                        background: white;
+                        display: block;
+                        position: relative;
+                        top:-100%;
+                        right: -100%;
+                    }
+                }
+                &:nth-of-type(2){
+                    &::after{
+                        content:'';
+                        width: .15em;
+                        height: 100%;
+                        background: white;
+                        display: block;
+                        position: relative;
+                        top:-100%;
+                        right: -100%;
+                    }
+                }
+                &:nth-of-type(3){
+                    &::after{
+                        content:'';
+                        width: .15em;
+                        height: 100%;
+                        background: white;
+                        display: block;
+                        position: relative;
+                        top:-100%;
+                        right: -100%;
+                    }
+                }
+               
+               
         }
+       
+      
 
     }
     
 
 
 }
+
+
 
 
 

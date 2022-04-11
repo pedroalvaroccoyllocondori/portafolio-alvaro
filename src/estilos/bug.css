@@ -1,0 +1,9 @@
+.TITULO{
+    display:inline-block;
+    height:30vh;
+    width: 65vw;
+    position:relative;
+    background: rgba(242, 242, 242, 0.64);
+    backdrop-filter: blur(4px);
+}
+    
