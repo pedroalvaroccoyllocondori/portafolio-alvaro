@@ -8,7 +8,8 @@ import {BrowserRouter as Router,Route,Switch} from "react-router-dom"
 
 const App=()=>(
   <Router>
-    <BannerMenu/>
+    {/* <BannerMenu/> */}
+    
     <Switch>
       <Route path="/" exact component={Presentacion}/>  
       <Route path="/proyectos" exact component={Proyectos}/>  

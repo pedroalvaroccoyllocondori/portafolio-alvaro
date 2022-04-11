@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.contenedorPresentacion{
+    width: 100vw;
+    min-height:75vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .cart{
+        width: 75vw;
+        height: 65vh;
+        background:rgb(189, 189, 189);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: row;
+        box-shadow: 79.1434px 94.1559px 290px rgba(0, 0, 0, 0.13), 54.8235px 65.2228px 184.146px rgba(0, 0, 0, 0.102332), 35.7645px 42.5486px 110.758px rgba(0, 0, 0, 0.0837609), 21.4126px 25.4742px 63.242px rgba(0, 0, 0, 0.0706472), 11.2139px 13.341px 35.0029px rgba(0, 0, 0, 0.0593528), 4.61477px 5.49014px 19.4461px rgba(0, 0, 0, 0.0462391), 1.0614px 1.26273px 9.97668px rgba(0, 0, 0, 0.0276676);
+        border-radius: 0px 26px 1px 0px;
+        .foto{
+            background: #D3D3D3;           
+            height:100%;
+            width: 50%;
+            
+        }
+        .descripccion{
+            background: #D3D3D3;
+            height:100%;
+            width:50%;
+            position: relative;
+            .tituloDescripccion{
+                position:absolute;
+                right: 0;
+                width: 80% ;
+                height:4em;
+                background: rgb(41, 41, 41);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                color: white;
+                font-size: 1.5rem;
+            }
+
+        }
+
+    }   
+
+}
+

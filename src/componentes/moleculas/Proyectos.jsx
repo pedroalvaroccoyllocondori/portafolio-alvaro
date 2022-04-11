@@ -1,5 +1,5 @@
 import React from "react"
-import "../../estilos/estilosProyectos.css"
+import "../../estilos/estilosProyectos.scss"
 
 
 
