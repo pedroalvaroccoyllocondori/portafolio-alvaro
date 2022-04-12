@@ -1,5 +1,4 @@
 import React from "react"
-import "../../estilos/estilosContacto.scss"
 
 
 const Contacto=()=>(

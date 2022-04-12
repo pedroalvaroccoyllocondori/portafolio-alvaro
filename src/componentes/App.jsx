@@ -5,10 +5,13 @@ import Contacto from './moleculas/Contacto'
 import Presentacion from './moleculas/Presentacion'
 import Proyectos from './moleculas/Proyectos'
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom"
+import "../estilos/style.scss"
+
+
 
 const App=()=>(
   <Router>
-    {/* <BannerMenu/> */}
+    <BannerMenu/>
     
     <Switch>
       <Route path="/" exact component={Presentacion}/>  

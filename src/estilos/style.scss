@@ -1,0 +1,27 @@
+@import "componentes/estilosBannerMenu";
+@import "componentes/estilosPresentacion";
+@import "componentes/estilosContacto.scss";
+@import "componentes/estilosEstudios.scss";
+@import "componentes/estilosProyectos.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local('Inter') ,local('Inter Regular'), url('../../src/assets/fuentes/Inter-VariableFont_slnt,wght.ttf');
+  }
+  @font-face {
+    font-family: 'BarlowCondensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('BarlowCondensed') ,local('BarlowCondensed Regular'), url('../../src/assets/fuentes/BarlowCondensed-Regular.ttf');
+  }
+  
