@@ -1,18 +1,38 @@
 import React from "react"
+import Face from "../../assets/iconos/face"
+import Fono from "../../assets/iconos/fono"
+import Git from "../../assets/iconos/git"
+import Gitlab from "../../assets/iconos/gitlab"
+import Correo from "../../assets/iconos/correo"
 
 
 const Contacto=()=>(
     <>
     <div className="contenedor">
-        <div className="titulo">contacto</div>
-        <div className="contenedor-imagenes">
-            <div className="item"><p>pedroalvaroccoyllocondori</p><img alt="imagen1" src="https://img.icons8.com/color/2x/gitlab.png"/></div>
-            <div className="item"><p>alvaro.ccoyllocondori</p><img alt="imagen2" src="https://www.flaticon.es/svg/static/icons/svg/1312/1312139.svg"/></div>
-            <div className="item"><p>pedroalvaroccoyllocondori</p><img alt="imagen3" src="https://www.flaticon.es/svg/static/icons/svg/733/733609.svg"/></div>
-            <div className="item"><p>+51 917186613</p><img  alt="imagen4" src="https://www.flaticon.com/svg/static/icons/svg/733/733585.svg"/></div>
-            <div className="item"><p>alvaroccoyllo</p><img  alt="imagen6" src="https://image.flaticon.com/icons/png/512/2111/2111463.png"/></div>
-            <div className="item">San idelfonso Mz17 lt 01 Ica-Peru<img alt="imagen7" src="https://www.flaticon.es/svg/static/icons/svg/684/684908.svg"/></div>
+       <div className="cart colum1 ">
+        <div className="descripccion proyectos">
+                    <div className="tituloDescripccion tituloDescripccion1">CONTACTAME</div>
+                   <div className="contener">
+                        <div className="cartContacto">
+                            <Face></Face>
+                        </div>
+                        <div className="cartContacto">
+                            <Fono></Fono>
+                        </div>
+                        <div className="cartContacto">
+                            <Git></Git>
+                        </div>
+                        <div className="cartContacto">
+                            <Correo></Correo>
+                        </div>
+                        <div className="cartContacto">
+                            <Gitlab></Gitlab>
+                        </div>
+
+                   </div>
+                    
         </div>
+       </div>
     </div>
     </>
 )

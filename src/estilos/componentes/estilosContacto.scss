@@ -1,48 +1,51 @@
 .contenedor{
-    background-image: url(https://images.unsplash.com/photo-1490093158370-1a6be674437b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1516&q=80);
-    background-size: cover;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1em;
-}
-
-.titulo{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    .colum1{
+        min-height: 80vh;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        .proyectos{
+            width: 100%;
+            height: 100%;
+           
+            position: relative;
+            padding-top: 6em;
+            // padding-bottom: 5em;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .tituloDescripccion1{
+                position:absolute;
+                top: 0;
+                left:0;
+                width: 50%;
+            }
+            .contener{
+                width: 60%;
+                height:100%;
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 0em;
+                align-items: center;
+                justify-content: center;
+                .cartContacto{
+                    width:11em;
+                    background: rgba(67, 67, 67, 1);
+                    color: white;
+                    height: 10em;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    margin: 1em;
+                    svg{
+                        width: 50%;
+                        height:50%;
+                    }
+                    &:hover{
+                         background: rgba(143, 140, 140, 1);
+                    }
     
-    margin-bottom: 1em;
-    margin-top: 1em;
-    box-shadow: 0px 0px 8px 1px rgb(192, 197, 207);
-    ;
-    border-radius: .5em;
-    font-family: 'Roboto' ;
-    
-}
-.contenedor-imagenes{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    grid-gap: 1.5em;
-    
-}
-
-.item{
-    display: flex;
-    height: 7em;
-    width: 25em;
-    box-shadow: 0px 0px 8px 1px rgb(192, 197, 207);
-    padding: .6em;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: .5em;
-    font-family: 'Roboto' ;
-   
-}
-img{
-    height: 70%;  
+                }
+            }
+        }
+    }
 }

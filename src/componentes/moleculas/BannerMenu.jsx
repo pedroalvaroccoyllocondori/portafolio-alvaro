@@ -9,13 +9,13 @@ const BannerMenu =()=>(
     <>
     <div className="contenedor-banner">
 
-        <div className="fijo fijo1">
+        <div className="fijo">
             <Face></Face>
         </div>
-        <div className="fijo fijo2">
+        <div className="fijo">
             <Fono></Fono>
         </div>
-        <div className="fijo fijo3">
+        <div className="fijo">
             <Git></Git>
         </div>
 
