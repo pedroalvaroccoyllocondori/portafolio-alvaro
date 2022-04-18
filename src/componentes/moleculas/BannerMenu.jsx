@@ -5,19 +5,50 @@ import Fono from "../../assets/iconos/fono"
 import Git from "../../assets/iconos/git"
 
 
-const BannerMenu =()=>(
+
+class BannerMenu extends React.Component {
+
+    componentDidMount(){
+       const prueba=document.querySelectorAll('.prueba')
+
+       console.log(prueba.length)
+       for (let i = 0; i <= prueba.length-1; i++) {
+           prueba[i].addEventListener('mouseenter',()=>{
+             prueba[i].classList.toggle("alvaro");
+
+           })
+           prueba[i].addEventListener('mouseleave',()=>{
+             prueba[i].classList.toggle("alvaro2");
+
+           })
+           
+       }
+    }
+    render() {
+        return(
     <>
     <div className="contenedor-banner">
 
-        <div className="fijo">
-            <Face></Face>
+
+        <div className="prueba" id='prueba'>
+            <div className="fijo">
+                <Face></Face>
+            </div>
+            alvaro_ccoyllo
         </div>
-        <div className="fijo">
-            <Fono></Fono>
+        <div className="prueba" id='prueba'>
+            <div className="fijo">
+                <Fono></Fono>
+            </div>
+            986182701
         </div>
-        <div className="fijo">
-            <Git></Git>
+        <div className="prueba" id='prueba'>
+            <div className="fijo">
+                <Git></Git>
+            </div>
+            pedroalvaroccoyllocondori
         </div>
+       
 
         <div className="TITULO">
             <div className="CONTENEDOR_TITULO">
@@ -35,9 +66,12 @@ const BannerMenu =()=>(
         </div>
 
     </div>
+    
     </>
-)
+    )
+    }
+}
 
 
-        
+     
 export default BannerMenu

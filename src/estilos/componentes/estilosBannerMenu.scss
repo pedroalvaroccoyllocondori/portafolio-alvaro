@@ -17,30 +17,62 @@
     position: relative;
     overflow-x: hidden;
 
-
-
-    .fijo{
-        width: 4em;
-        height: 4em;
-        background: rgba(67, 67, 67, 1);
-        color: white;
+    .prueba{
         align-self:start;
+        height:4rem;
+        width: 4rem;
+        border-radius: .5em;
         margin-bottom: .5em;
+        background-color: rgba(67, 67, 67, 1);
         display:flex;
-        justify-content:center;
-        align-items:center;
-        
-        svg{
-            width: 70%;
-            height:70%;
-        }
+        justify-content: right;
+        align-items: center;
+        padding: .8em;
+        color: white;
+        position: relative;
+        font-family: 'Inter';
+        font-size: .9rem;
 
+        .fijo{
+            pointer-events: none;
+            position:absolute;
+            left: 0;
+            width: 4rem;
+            height: 4rem;
+            background: rgba(67, 67, 67, 1);
+            color: white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            svg{
+                pointer-events: none;
+
+                width: 70%;
+                height:70%;
+                pointer-events: initial;
+                } 
+            &:hover{
+                pointer-events: none;
+                background: rgba(206, 206, 206, 1);
+                color: black;
+                   }
+            }
+      
         
-        &:hover{
-            background: rgba(206, 206, 206, 1);
-            color: black;
+    }
+   
+    .alvaro{
+        width:12rem ;
+        &:nth-of-type(3){
+            width: 16rem;
         }
+    }
+    .alvaro2{
+        width: 4rem;
+        &:nth-of-type(3){
+            width: 4rem;
         }
+    }
 
     .TITULO{
         display:inline-block;

@@ -2,9 +2,11 @@
 .contenedor{
     
     .columna1{
-        height: 200vh;
+        height: 250vh;
         margin-top: 3em;
         margin-bottom: 3em;
+        display:flex;
+        flex-direction: column;
         .proyectos{
             width: 100%;
             .tituloDescripccion1{
