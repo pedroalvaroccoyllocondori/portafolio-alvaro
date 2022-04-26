@@ -1,4 +1,4 @@
-import React,{Suspense} from 'react'
+import React,{Suspense ,useState,useEffect} from 'react'
 import BannerMenu from './moleculas/BannerMenu'
 import Estudios from './moleculas/Estudios'
 import Contacto from './moleculas/Contacto'
@@ -11,12 +11,26 @@ import Loader from './moleculas/loader'
 
 
 
-class App extends React.Component {
-  render() {
-    return(
-      
+const App = ()=> {
 
-      <div className="application">
+  const[loader,setLoader]=useState(false)
+
+  useEffect(()=>{
+
+    setTimeout(()=>{
+      setLoader(true)
+      console.log("loader")
+    },2000)
+ 
+  },[])
+
+    return(
+      <>
+      {
+        !loader ? <Loader></Loader>
+        
+        :
+        <div className="application">
         
         <Suspense fallback={<Loader></Loader>}>
             <Helmet>
@@ -47,14 +61,12 @@ class App extends React.Component {
         </Suspense>
             
       </div>
+      }
+      </>
+     
     )
-  }
+    
 }
-
-  
-
-
-
 
 
 export default App;
