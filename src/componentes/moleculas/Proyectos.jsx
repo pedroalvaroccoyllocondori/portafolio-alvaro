@@ -1,9 +1,11 @@
-import React from "react"
+import React ,{Suspense}from "react"
+import Loader from './loader'
 
 
 
 const Proyectos=()=>(
     <>
+     <Suspense fallback={<Loader></Loader>}>
     <div className="contenedor">
        <div className="cart columna1">
         <div className="descripccion proyectos">
@@ -18,6 +20,7 @@ const Proyectos=()=>(
                 </div>
        </div>
     </div>
+    </Suspense>
     </>
 )
 
