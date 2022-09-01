@@ -17,10 +17,10 @@ const App = ()=> {
 
   useEffect(()=>{
 
-    // setTimeout(()=>{
+    setTimeout(()=>{
+      setLoader(true)
      
-    // },2000)
-    setLoader(true)
+    },2000)
     console.log("loader")
  
   },[])
